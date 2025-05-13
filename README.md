@@ -37,7 +37,7 @@ The key idea is to :
 - parse different elements (text, images, tables, formulas) from a PDF,
 - convert them into a unified embedding space using CLIP,
 - index those embeddings using FAISS,
-- retrieve and generate answers to natural language queries using a language model (LLamA) enhanced by relevant context.
+- retrieve and generate answers to natural language queries using a large language model enhanced by relevant context.
 
 <a name="2"></a>
 ## Tech stack
