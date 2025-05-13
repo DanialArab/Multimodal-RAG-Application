@@ -28,7 +28,7 @@ def main():
 
     # Define the URL of the paper
     pdf_url = "https://arxiv.org/pdf/1312.6114.pdf"  # VAE paper link
-    pdf_filename = "vae_paper.pdf"
+    pdf_filename = "VAE.pdf"
     pdf_file_path = os.path.join(DATA_DIR, pdf_filename)
 
     # Check if the file already exists before downloading
