@@ -1,5 +1,3 @@
-# main.py
-
 from config import BASE_DIR, DATA_DIR, OUTPUT_DIR
 from utils import create_directories, download_pdf
 from extract.element_saver import save_extracted_elements
@@ -29,8 +27,8 @@ def main():
     create_directories(DATA_DIR)
 
     # Define the URL of the paper
-    pdf_url = "https://arxiv.org/pdf/1706.03762.pdf"  # Attention is All You Need URL
-    pdf_filename = "attention_paper.pdf"
+    pdf_url = "https://arxiv.org/pdf/1312.6114.pdf"  # VAE paper link
+    pdf_filename = "vae_paper.pdf"
     pdf_file_path = os.path.join(DATA_DIR, pdf_filename)
 
     # Check if the file already exists before downloading
