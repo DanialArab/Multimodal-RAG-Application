@@ -105,19 +105,19 @@ Here are the steps to retrieve the answer:
 
 Here are some queries and the RAG response as a POC:
 
-   **query_1** = "How is the marginal likelihood is calculated?"
+      **query_1** = "How is the marginal likelihood is calculated?"
 
 RAG response:
 
-   The marginal likelihood is calculated as a sum over the marginal likelihoods of individual datapoints, which can be expressed as:
-   
-   log p(x₁, ..., xₙ) = ∑[log p(xᵢ)]
-   
-   where p(xᵢ) is the marginal likelihood of each individual datapoint xᵢ.
-   
-   This can be further rewritten using equations (20) and (18) to derive a Monte Carlo estimate of the variational lower bound for a given datapoint x(i), which involves choosing a prior p(θ) and a function g(θ, x) that satisfies certain conditions.
-   
-   In essence, the marginal likelihood calculation involves summing up the logarithmic probabilities of each individual datapoint in the dataset.
+      The marginal likelihood is calculated as a sum over the marginal likelihoods of individual datapoints, which can be expressed as:
+      
+      log p(x₁, ..., xₙ) = ∑[log p(xᵢ)]
+      
+      where p(xᵢ) is the marginal likelihood of each individual datapoint xᵢ.
+      
+      This can be further rewritten using equations (20) and (18) to derive a Monte Carlo estimate of the variational lower bound for a given datapoint x(i), which involves choosing a prior p(θ) and a function g(θ, x) that satisfies certain conditions.
+      
+      In essence, the marginal likelihood calculation involves summing up the logarithmic probabilities of each individual datapoint in the dataset.
 
 
 
