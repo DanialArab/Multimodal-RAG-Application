@@ -1,7 +1,6 @@
 # Multimodal Retrieval-Augmented Generation 
 
-
-This project implements a Multimodal Retrieval-Augmented Generation (RAG) system capable of processing and querying information from PDF documents containing 
+In this project, I implemented a Multimodal Retrieval-Augmented Generation (RAG) system capable of processing and querying information from PDF documents containing 
 - text,
 - images,
 - tables, and
@@ -10,10 +9,8 @@ This project implements a Multimodal Retrieval-Augmented Generation (RAG) system
 It integrates various components to extract, embed, index, and retrieve multimodal data, facilitating advanced question-answering capabilities.
 
 1. [Intro](#1)
-   1. [Easy Questions](#2)  
-   2. [Medium Questions](#3)
-   3. [Hard Questions](#4) 
-3. [Complete SQL Mastery](#5)
+2. [Repository structures](#2)
+3. [Hard Questions](#4) 
 
  Here are the tech stack used to build this project:
 
@@ -27,6 +24,10 @@ It integrates various components to extract, embed, index, and retrieve multimod
 ## Intro
 
 
+<a name="2"></a>
+## The repository is organized as follows:
+
+Here is the project structure:
 
     Multimodal-RAG-Application/
     ├── config.py                 # Configuration settings
