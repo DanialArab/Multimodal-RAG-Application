@@ -6,10 +6,9 @@ This project implements a Multimodal Retrieval-Augmented Generation (RAG) system
 - tables, and
 - formulas.
 
-It integrates various components to extract, embed, index, and retrieve multimodal data, facilitating advanced question-answering capabilities.
+It integrates various components to extract, embed, index, and retrieve multimodal data, facilitating advanced question-answering capabilities. Here are the tech stack used to build this project:
 
-
- **<a href="https://unstructured.io/">Unstructured</a>**. 
+- **<a href="https://unstructured.io/">Unstructured</a>**. 
  
 1. [Leetcode Database Questions](#1)
    1. [Easy Questions](#2)  
