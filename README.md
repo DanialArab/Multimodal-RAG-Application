@@ -35,7 +35,7 @@ Traditional question-answering systems often rely solely on text data, which lim
 
 The key idea is to :
 - parse different elements (text, images, tables, formulas) from a PDF.
-- -convert them into a unified embedding space using CLIP.
+- convert them into a unified embedding space using CLIP.
 - index those embeddings using FAISS.
 - retrieve and generate answers to natural language queries using a language model (LLamA) enhanced by relevant context.
 
