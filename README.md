@@ -130,9 +130,9 @@ RAG response:
 <a name="12"></a>
 ## query_2 = "What does reparameterization of the variational lower bound yield?"
 
-The reparameterization of the variational lower bound yields a Stochastic Gradient Variational Bayes (SGVB) estimator, denoted as ~ L(0, ; x). This allows for the application of stochastic gradient descent to optimize the variational parameters, making it possible to learn the model using backpropagation. The reparameterization trick enables the Monte Carlo estimation of the variational lower bound, which is a key component of Variational Autoencoders (VAEs) and other deep generative models.
-
 RAG response:
+
+      The reparameterization of the variational lower bound yields a Stochastic Gradient Variational Bayes (SGVB) estimator, denoted as ~ L(0, ; x). This allows for the application of stochastic gradient descent to optimize the variational parameters, making it possible to learn the model using backpropagation. The reparameterization trick enables the Monte Carlo estimation of the variational lower bound, which is a key component of Variational Autoencoders (VAEs) and other deep generative models.
 
       In essence, reparameterization helps to:
       
