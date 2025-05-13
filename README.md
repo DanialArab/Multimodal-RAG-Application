@@ -32,11 +32,14 @@ The key idea is to :
 
 <a name="2"></a>
 ## Tech stack
- Here are the tech stack used to build this project:
+
+The following technologies were used to build this project:
 
 - Data handling: **<a href="https://unstructured.io/">Unstructured</a>** is used for all kind of data extraction and parsing
 - Embedding: The Contrastive Language-Image Pretraining (CLIP) model is used to generate embeddings. It jointly embeds images and text into the same vector space, enabling comparison between the two.
 - Vector Search: FAISS is used for similarity search and building a searchable index of embeddings to perform fast and scalable similarity queries.
+- LLM Deployment: Ollama is used for lightweight and efficient hosting and deployment of large language models (LLMs).
+
 
 
 <a name="3"></a>
@@ -82,12 +85,9 @@ Saves each element as a separate file or entry for later processing.
 <a name="7"></a>
 ### Multimodal Embedding Generation 
 Uses CLIP to generate embeddings for:
-
-Raw images
-
-Visual representations of tables/formulas
-
-Plain text blocks
+- Raw images
+- Visual representations of tables/formulas
+- Plain text blocks
 
 Embeddings are normalized and stored in a list.
 
@@ -97,13 +97,10 @@ All embeddings are indexed using FAISS (IndexFlatL2) to enable fast vector simil
 
 <a name="9"></a>
 ### Retrieval & Answer Generation
-On receiving a query (e.g., “summarize the abstract”):
-
-Generates an embedding for the query.
-
-Retrieves top-k most similar elements using the FAISS index.
-
-Feeds the retrieved context into LLaMA via ollama for generation.
+Here are the steps to retrieve the answer:
+- First, the embedding for the query needs to be generated,
+- then the top-k most similar elements using the FAISS index will be retrieved
+- the, the retrieved context is fed into LLamA via Ollama for generation.
 
 Displays the final answer to the user.
 
