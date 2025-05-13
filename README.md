@@ -11,13 +11,13 @@ It integrates various components to extract, embed, index, and retrieve multimod
 1. [Intro](#1)
 2. [Tech stack](#2)
 3. [Repository structures](#3)
-4. [Pipeline](#5)
-   1. [Getting the Document]
-   2. [Document Element Extraction]
-   3. [Multimodal Embedding Generation]
-   4. [Vector Indexing]
-   5. [Retrieval & Answer Generation]
-6. [Results](#4) 
+4. [Pipeline](#4)
+   1. [Getting the Document](#5)
+   2. [Document Element Extraction](#6)
+   3. [Multimodal Embedding Generation](#7)
+   4. [Vector Indexing](#8)
+   5. [Retrieval & Answer Generation](#9)
+6. [Results](#10) 
 
 
 <a name="1"></a>
