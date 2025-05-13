@@ -127,8 +127,6 @@ RAG response:
       
       In essence, the marginal likelihood calculation involves summing up the logarithmic probabilities of each individual datapoint in the dataset.
 
-
-
 <a name="12"></a>
 ## query_2 = "What does reparameterization of the variational lower bound yield?"
 
@@ -143,15 +141,12 @@ RAG response:
       Improve the stability and efficiency of training by avoiding the need for REINFORCE-style score function estimators.
       By reparameterizing the variational lower bound, you can obtain a more efficient and stable estimate of the evidence lower bound (ELBO), which is essential for training VAEs and other deep generative models.
 
-
-
 <a name="13"></a>
 ## query_3 = "What algorithm was proposed?"
 
 RAG response:
 
       The algorithm is the Auto-Encoding Variational Bayes (AEVB) algorithm, which uses the Stochastic Gradient Variational Bayes (SGVB) estimator to optimize a recognition model for efficient approximate posterior inference.
-
 
 <a name="14"></a>
 ## query_4 = "What is the trick that was discussed?"
@@ -167,7 +162,7 @@ RAG response:
 
 RAG response:
 
-      In the VAE paper, parameters are updated using stochastic gradient methods, specifically the Adagrad algorithm with a global stepsize parameter chosen from {0.01, 0.02, 0.1} based on performance on the training set in the first few iterations. The parameters, both variational and generative, are initialized by random sampling from N(0,0.01) and are jointly stochastically optimized using the MAP criterion. Minibatches of size M = 100 are used, with L = 1 samples per datapoint.
+      The parameters are updated using stochastic gradient methods, specifically the Adagrad algorithm with a global stepsize parameter chosen from {0.01, 0.02, 0.1} based on performance on the training set in the first few iterations. The parameters, both variational and generative, are initialized by random sampling from N(0,0.01) and are jointly stochastically optimized using the MAP criterion. Minibatches of size M = 100 are used, with L = 1 samples per datapoint.
 
       To be more specific, the parameter updates are done as follows:
 
