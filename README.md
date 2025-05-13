@@ -43,7 +43,7 @@ The following technologies were used to build this project:
 <a name="3"></a>
 ## Repository structure
 
-Here is the project structure:
+Here is the project structure with a brief description on the functionality of each module:
 
     Multimodal-RAG-Application/
     ├── config.py                 # Configuration settings
@@ -55,7 +55,7 @@ Here is the project structure:
     ├── index/                    # Indexing modules
     │   └── faiss_index.py        # FAISS index creation
     ├── rag/                      # RAG model interaction
-    │   └── rag_ollama.py         # Interfaces with LLaMA model
+    │   └── rag_ollama.py         # Interfaces with Llama model
     ├── utils.py                  # Utility functions
     ├── main.py                   # Main execution script
     ├── requirements.txt          # Python dependencies
