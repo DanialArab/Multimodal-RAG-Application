@@ -17,7 +17,8 @@ It integrates various components to extract, embed, index, and retrieve multimod
    3. [Multimodal Embedding Generation](#7)
    4. [Vector Indexing](#8)
    5. [Retrieval & Answer Generation](#9)
-5. [Results and discussion ](#10) 
+5. [Results and discussion ](#10)
+   1. [**query_1** = "How is the marginal likelihood is calculated?"](#11)
 
 
 <a name="1"></a>
@@ -105,7 +106,7 @@ Here are the steps to retrieve the answer:
 
 Here are some queries and the RAG response as a POC:
 
-      **query_1** = "How is the marginal likelihood is calculated?"
+**query_1** = "How is the marginal likelihood is calculated?"
 
 RAG response:
 
