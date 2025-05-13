@@ -70,8 +70,13 @@ Enable backpropagation through the variational lower bound, allowing for end-to-
 Improve the stability and efficiency of training by avoiding the need for REINFORCE-style score function estimators.
 By reparameterizing the variational lower bound, you can obtain a more efficient and stable estimate of the evidence lower bound (ELBO), which is essential for training VAEs and other deep generative models.
 
-
-
 query = "How are Parameters updated?"
 
+
+query = "What algorithm was proposed?"
+The algorithm is the Auto-Encoding Variational Bayes (AEVB) algorithm, which uses the Stochastic Gradient Variational Bayes (SGVB) estimator to optimize a recognition model for efficient approximate posterior inference.
+
+
+query = "What is the trick that was discussed?"
+The trick that was discussed is called the "reparameterization trick". This trick allows for the differentiation of the variational lower bound with respect to the variational parameters, which is necessary for optimizing the model. The reparameterization trick involves expressing the latent variables as a deterministic function of the variational parameters and a random noise variable, which enables backpropagation through the latent space.
 
