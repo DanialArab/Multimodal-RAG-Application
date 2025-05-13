@@ -37,7 +37,7 @@ The key idea is to :
 - parse different elements (text, images, tables, formulas) from a PDF,
 - convert them into a unified embedding space using CLIP,
 - index those embeddings using FAISS,
-- retrieve and generate answers to natural language queries using a large language model enhanced by relevant context.
+- retrieve and generate answers to natural language queries using a Large Language Model (LLM) enhanced by relevant context.
 
 <a name="2"></a>
 ## Tech stack
@@ -47,7 +47,7 @@ The following technologies were used to build this project:
 - Data handling: **<a href="https://unstructured.io/">Unstructured</a>** is used for all kind of data extraction and parsing
 - Embedding: The Contrastive Language-Image Pretraining (CLIP) model is used to generate embeddings. It jointly embeds images and text into the same vector space, enabling comparison between the two.
 - Vector Search: FAISS is used for similarity search and building a searchable index of embeddings to perform fast and scalable similarity queries.
-- LLM Deployment: Ollama is used for lightweight and efficient hosting and deployment of large language models (LLMs).
+- LLM Deployment: Ollama is used for lightweight and efficient hosting and deployment of LLMs.
 
 <a name="3"></a>
 ## Repository structure
