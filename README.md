@@ -80,23 +80,23 @@ A PDF file for which the link is provided (e.g., as an example “Auto-Encoding 
 
 <a name="6"></a>
 ### Document Element Extraction
-Uses the unstructured library to parse the PDF into elements:
+The unstructured library is used to parse the PDF into elements:
 
 - Text blocks (narrative, header, footer)
 - Images
 - Tables
 - Formulas
 
-Saves each element as a separate file or entry for later processing.
+then each element is saved as a separate file or entry for later processing.
 
 <a name="7"></a>
 ### Multimodal Embedding Generation 
-Uses CLIP to generate embeddings for:
+The CLIP model was used to generate embeddings for:
 - Raw images
 - Visual representations of tables/formulas
 - Plain text blocks
 
-Embeddings are normalized and stored in a list.
+The generated embeddings are normalized and stored in a list.
 
 <a name="8"></a>
 ### Vector Indexing
