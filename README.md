@@ -8,6 +8,8 @@ In this project, I implemented a Multimodal Retrieval-Augmented Generation (RAG)
 
 It integrates various components to extract, embed, index, and retrieve multimodal data, facilitating advanced question-answering capabilities.
 
+# Table of content
+
 1. [Intro](#1)
 2. [Tech stack](#2)
 3. [Repository structures](#3)
