@@ -17,7 +17,7 @@ It integrates various components to extract, embed, index, and retrieve multimod
    3. [Multimodal Embedding Generation](#7)
    4. [Vector Indexing](#8)
    5. [Retrieval & Answer Generation](#9)
-6. [Results](#10) 
+6. [Results and discussion ](#10) 
 
 
 <a name="1"></a>
@@ -39,8 +39,8 @@ The key idea is to :
 - Vector Search: FAISS is used for similarity search and building a searchable index of embeddings to perform fast and scalable similarity queries.
 
 
-<a name="2"></a>
-## The repository is organized as follows:
+<a name="3"></a>
+## Repository structure
 
 Here is the project structure:
 
@@ -61,16 +61,14 @@ Here is the project structure:
     └── README.md                 # Project documentation
 
 
-<a name="2"></a>
+<a name="4"></a>
 ## Pipeline
 
-<a name="2"></a>
+<a name="5"></a>
 ### Getting the Document
-Automatically downloads a PDF from arXiv (e.g., “Auto-Encoding Variational Bayes”).
+A PDF file for which the link is provided (e.g., as an example “Auto-Encoding Variational Bayes” article was chosen for proof of concept) is downloaded and stored  in a specified DATA_DIR.
 
-Stores it in a specified DATA_DIR.
-
-<a name="2"></a>
+<a name="6"></a>
 ### Document Element Extraction
 Uses the unstructured library to parse the PDF into elements:
 
@@ -81,7 +79,7 @@ Uses the unstructured library to parse the PDF into elements:
 
 Saves each element as a separate file or entry for later processing.
 
-<a name="2"></a>
+<a name="7"></a>
 ### Multimodal Embedding Generation 
 Uses CLIP to generate embeddings for:
 
@@ -93,11 +91,12 @@ Plain text blocks
 
 Embeddings are normalized and stored in a list.
 
-<a name="2"></a>
+<a name="8"></a>
 ### Vector Indexing
 All embeddings are indexed using FAISS (IndexFlatL2) to enable fast vector similarity search.
 
-Retrieval & Answer Generation
+<a name="9"></a>
+### Retrieval & Answer Generation
 On receiving a query (e.g., “summarize the abstract”):
 
 Generates an embedding for the query.
@@ -108,7 +107,8 @@ Feeds the retrieved context into LLaMA via ollama for generation.
 
 Displays the final answer to the user.
 
-
+<a name="10"></a>
+## Results and discussion 
 query = "How is the marginal likelihood is calculated?"
 
 The marginal likelihood is calculated as a sum over the marginal likelihoods of individual datapoints, which can be expressed as:
