@@ -80,3 +80,15 @@ The algorithm is the Auto-Encoding Variational Bayes (AEVB) algorithm, which use
 query = "What is the trick that was discussed?"
 The trick that was discussed is called the "reparameterization trick". This trick allows for the differentiation of the variational lower bound with respect to the variational parameters, which is necessary for optimizing the model. The reparameterization trick involves expressing the latent variables as a deterministic function of the variational parameters and a random noise variable, which enables backpropagation through the latent space.
 
+
+
+query = "How are Parameters updated?"
+In the VAE paper, parameters are updated using stochastic gradient methods, specifically the Adagrad algorithm with a global stepsize parameter chosen from {0.01, 0.02, 0.1} based on performance on the training set in the first few iterations. The parameters, both variational and generative, are initialized by random sampling from N(0,0.01) and are jointly stochastically optimized using the MAP criterion. Minibatches of size M = 100 are used, with L = 1 samples per datapoint.
+
+To be more specific, the parameter updates are done as follows:
+
+The variational lower bound is reparameterized to obtain a lower bound estimator that can be straightforwardly optimized using standard stochastic gradient methods.
+The Adagrad algorithm is used to adapt the stepsizes for the parameter updates.
+The global stepsize parameters are chosen from {0.01, 0.02, 0.1} based on performance on the training set in the first few iterations.
+Minibatches of size M = 100 are used, with L = 1 samples per datapoint.
+This process allows for efficient inference and learning in directed probabilistic models with continuous latent variables and large datasets.
