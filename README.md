@@ -51,7 +51,7 @@ Here is the project structure:
     │   └── clip_embedder.py      # CLIP-based embedding generator
     ├── extract/                  # PDF extraction modules
     │   ├── element_saver.py      # Saves extracted elements
-    │   └── pdf_parser.py         # Parses PDF files
+    │   └── pdf_parser.py         # Parses PDF files using unstructured library 
     ├── index/                    # Indexing modules
     │   └── faiss_index.py        # FAISS index creation
     ├── rag/                      # RAG model interaction
