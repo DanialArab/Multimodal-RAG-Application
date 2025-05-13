@@ -9,20 +9,24 @@ In this project, I implemented a Multimodal Retrieval-Augmented Generation (RAG)
 It integrates various components to extract, embed, index, and retrieve multimodal data, facilitating advanced question-answering capabilities.
 
 1. [Intro](#1)
-2. [Repository structures](#2)
-3. [Hard Questions](#4) 
+2. [Tech stack](#2)
+3. [Repository structures](#3)
+4. [Methodology](#5)
+5. [Results](#4) 
 
+
+
+
+<a name="1"></a>
+## Intro
+
+<a name="2"></a>
+## Tech stack
  Here are the tech stack used to build this project:
 
 - **<a href="https://unstructured.io/">Unstructured</a>**
 - 
  
-
- 
-
-<a name="1"></a>
-## Intro
-
 
 <a name="2"></a>
 ## The repository is organized as follows:
