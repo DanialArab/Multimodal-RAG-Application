@@ -17,7 +17,7 @@ It integrates various components to extract, embed, index, and retrieve multimod
    3. [Multimodal Embedding Generation](#7)
    4. [Vector Indexing](#8)
    5. [Retrieval & Answer Generation](#9)
-6. [Results and discussion ](#10) 
+5. [Results and discussion ](#10) 
 
 
 <a name="1"></a>
@@ -39,8 +39,6 @@ The following technologies were used to build this project:
 - Embedding: The Contrastive Language-Image Pretraining (CLIP) model is used to generate embeddings. It jointly embeds images and text into the same vector space, enabling comparison between the two.
 - Vector Search: FAISS is used for similarity search and building a searchable index of embeddings to perform fast and scalable similarity queries.
 - LLM Deployment: Ollama is used for lightweight and efficient hosting and deployment of large language models (LLMs).
-
-
 
 <a name="3"></a>
 ## Repository structure
@@ -100,12 +98,12 @@ All embeddings are indexed using FAISS (IndexFlatL2) to enable fast vector simil
 Here are the steps to retrieve the answer:
 - First, the embedding for the query needs to be generated,
 - then the top-k most similar elements using the FAISS index will be retrieved
-- the, the retrieved context is fed into LLamA via Ollama for generation.
-
-Displays the final answer to the user.
+- the retrieved context is fed into Llama model via Ollama 
 
 <a name="10"></a>
 ## Results and discussion 
+HERE
+
 query = "How is the marginal likelihood is calculated?"
 
 The marginal likelihood is calculated as a sum over the marginal likelihoods of individual datapoints, which can be expressed as:
