@@ -1,5 +1,4 @@
-# Multimodal_RAG
-
+# Multimodal Retrieval-Augmented Generation 
 
 This project implements a Multimodal Retrieval-Augmented Generation (RAG) system capable of processing and querying information from PDF documents containing 
 - text,
@@ -10,7 +9,7 @@ This project implements a Multimodal Retrieval-Augmented Generation (RAG) system
 It integrates various components to extract, embed, index, and retrieve multimodal data, facilitating advanced question-answering capabilities.
 
 
-my solutions to **Leetcode - Database questions using SQL**. The Leetcode databases are first needed to be regenerated in my MySQL server using the SQL Schema, presented along with each Leetcode question. This is required to be able to make a query in the Jupyter Notebook. All of my solutions are presented using Pandas API in Jupyter Notebook **<a href="https://github.com/DanialArab/SQL/blob/master/Leetcode%20Database%20Questions/Leetcode_Database_Questions_Pandas_API.ipynb">Leetcode Database Questions - Pandas API</a>**. Also, I leveraged Spark SQL API to re-solve the Leetcode - Database questions, which are detailed in the Jupyter Notebook file **<a href="https://github.com/DanialArab/SQL/blob/master/Leetcode%20Database%20Questions/Leetcode_Database_Questions_Spark_SQL_API.ipynb">Leetcode Database Questions - Spark SQL API</a>**. This repo contains the following directories and each one contains the pertinent files including README and Jupyter Notebook files: 
+ **<a href="https://unstructured.io/">Unstructured</a>**. 
  
 1. [Leetcode Database Questions](#1)
    1. [Easy Questions](#2)  
