@@ -11,8 +11,13 @@ It integrates various components to extract, embed, index, and retrieve multimod
 1. [Intro](#1)
 2. [Tech stack](#2)
 3. [Repository structures](#3)
-4. [Methodology](#5)
-5. [Results](#4) 
+4. [Pipeline](#5)
+   1. [Getting the Document]
+   2. [Document Element Extraction]
+   3. [Multimodal Embedding Generation]
+   4. [Vector Indexing]
+   5. [Retrieval & Answer Generation]
+6. [Results](#4) 
 
 
 <a name="1"></a>
@@ -54,6 +59,54 @@ Here is the project structure:
     ├── main.py                   # Main execution script
     ├── requirements.txt          # Python dependencies
     └── README.md                 # Project documentation
+
+
+<a name="2"></a>
+## Pipeline
+
+<a name="2"></a>
+### Getting the Document
+Automatically downloads a PDF from arXiv (e.g., “Auto-Encoding Variational Bayes”).
+
+Stores it in a specified DATA_DIR.
+
+<a name="2"></a>
+### Document Element Extraction
+Uses the unstructured library to parse the PDF into elements:
+
+- Text blocks (narrative, header, footer)
+- Images
+- Tables
+- Formulas
+
+Saves each element as a separate file or entry for later processing.
+
+<a name="2"></a>
+### Multimodal Embedding Generation 
+Uses CLIP to generate embeddings for:
+
+Raw images
+
+Visual representations of tables/formulas
+
+Plain text blocks
+
+Embeddings are normalized and stored in a list.
+
+<a name="2"></a>
+### Vector Indexing
+All embeddings are indexed using FAISS (IndexFlatL2) to enable fast vector similarity search.
+
+Retrieval & Answer Generation
+On receiving a query (e.g., “summarize the abstract”):
+
+Generates an embedding for the query.
+
+Retrieves top-k most similar elements using the FAISS index.
+
+Feeds the retrieved context into LLaMA via ollama for generation.
+
+Displays the final answer to the user.
 
 
 query = "How is the marginal likelihood is calculated?"
