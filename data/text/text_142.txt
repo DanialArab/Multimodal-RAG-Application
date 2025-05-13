@@ -1,1 +1,0 @@
-development set, newstest2013. We used beam search as described in the previous section, but no checkpoint averaging. We present these results in Table 3.

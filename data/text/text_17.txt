@@ -1,1 +1,0 @@
-Noam Shazeer∗ Google Brain noam@google.com

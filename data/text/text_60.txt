@@ -1,1 +1,0 @@
-of the values, where the weight assigned to each value is computed by a compatibility function of the query with the corresponding key.
