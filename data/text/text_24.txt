@@ -1,0 +1,1 @@
+The ﬁrst RHS term is the KL divergence of the approximate from the true posterior. Since this KL-divergence is non-negative, the second RHS term L(θ,φ;x(i)) is called the (variational) lower bound on the marginal likelihood of datapoint i, and can be written as:

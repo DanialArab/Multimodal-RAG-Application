@@ -1,0 +1,1 @@
+We apply this technique to the variational lower bound (eq. (2). yielding our generic Stochastic Gradient Variational Bayes (SGVB) estimator £4(0, 6; x) ~ L(0, ; x):

@@ -1,0 +1,1 @@
+3. Again, sample L new values from the posterior. Plug these samples, as well as the ﬁtted q(z), into the following estimator:

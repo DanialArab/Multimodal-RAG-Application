@@ -1,0 +1,1 @@
+Note that this is a lower bound since the KL divergence is non-negative; the bound equals the true marginal when the approximate and true posteriors match exactly. The term log pg (X) is composed of a sum over the marginal likelihoods of individual datapoints log po(X) = ye, log pe(x), which can each be rewritten as:

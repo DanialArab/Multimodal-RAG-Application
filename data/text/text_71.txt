@@ -1,0 +1,2 @@
+C.2 Gaussian MLP as encoder or decoder
+In this case let encoder or decoder be a multivariate Gaussian with a diagonal covariance structure:

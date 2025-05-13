@@ -1,0 +1,2 @@
+j
+simply denote the j-th element of vectors µ(i) and σ(i).

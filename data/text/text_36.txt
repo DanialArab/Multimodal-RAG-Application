@@ -1,0 +1,4 @@
+2.4 The reparameterization trick
+In order to solve our problem we invoked an alternative method for generating samples from q¢(z|x). The essential parameterization trick is quite simple. Let z be a continuous random vari- able, and z ~ q¢(z|x) be some conditional distribution. It is then often possible to express the random variable z as a deterministic variable z = gg(€,x), where € is an auxiliary variable with independent marginal p(e€), and g¢(.) is some vector-valued function parameterized by @.
+This reparameterization is useful for our case since it can be used to rewrite an expectation w.r.t q¢(z|x) such that the Monte Carlo estimate of the expectation is differentiable w.r.t. ¢. A proof is as follows. Given the deterministic mapping z = gg(e,x) we know that qg(z|x) [];dzi = p(€) []; des. Thereford!] JS qo(2\x) f(z) dz = f ple) f(z)de = f ple) f(ge(e,x)) de. It follows
+‘Note that for infinitesimals we use the notational convention dz = TI;

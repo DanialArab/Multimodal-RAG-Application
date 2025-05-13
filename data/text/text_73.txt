@@ -1,0 +1,3 @@
+D Marginal likelihood estimator
+We derived the following marginal likelihood estimator that produces good estimates of the marginal likelihood as long as the dimensionality of the sampled space is low (less then 5 dimensions), and sufﬁcient samples are taken. Let pθ(x,z) = pθ(z)pθ(x|z) be the generative model we are sampling from, and for a given datapoint x(i) we would like to estimate the marginal likelihood pθ(x(i)).
+The estimation process consists of three stages:

@@ -1,0 +1,1 @@
+Algorithm 2 Pseudocode for computing a stochastic gradient using our estimator. See text for meaning of the functions fφ, gφ and hφ.

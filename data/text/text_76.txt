@@ -1,0 +1,1 @@
+2. Fit a density estimator q(z) to these samples {z(l)}.

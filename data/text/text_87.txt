@@ -1,0 +1,1 @@
+q¢(@) and qg(z|x) we can reparameterize conditional samples Z ~ qg(z|x) as

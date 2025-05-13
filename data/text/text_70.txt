@@ -1,0 +1,1 @@
+where fσ(.) is the elementwise sigmoid activation function, and where θ = {W1,W2,b1,b2} are the weights and biases of the MLP.

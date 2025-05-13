@@ -1,0 +1,3 @@
+Require: φ (Current value of variational parameters)
+Require: @ (Current value of variational gO for 1 is 1 to L do x + Random draw from dataset X e + Random draw from prior p(e) ¢ < Random draw from prior p(¢) &- 8+ 7Valo(x 9o(€,x), ho(6)) end for return g
+where µz and σz are yet unspeciﬁed functions of x. Since they are Gaussian, we can parameterize the variational approximate posteriors:

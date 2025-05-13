@@ -1,0 +1,3 @@
+F Full VB
+As written in the paper, it is possible to perform variational inference on both the parameters θ and the latent variables z, as opposed to just the latent variables as we did in the paper. Here, we’ll derive our estimator for that case.
+Let pα(θ) be some hyperprior for the parameters introduced above, parameterized by α. The marginal likelihood can be written as:

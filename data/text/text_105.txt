@@ -1,0 +1,3 @@
+where
+With © we signify an element-wise product. These can be plugged into the lower bound defined above (eqs (21) and (22).
+In this case it is possible to construct an alternative estimator with a lower variance, since in this model pα(θ), pθ(z), qφ(θ) and qφ(z|x) are Gaussian, and therefore four terms of fφ can be solved analytically. The resulting estimator is:

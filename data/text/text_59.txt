@@ -1,0 +1,2 @@
+A Visualisations
+See ﬁgures 4 and 5 for visualisations of latent space and corresponding observed space of models learned with SGVB.

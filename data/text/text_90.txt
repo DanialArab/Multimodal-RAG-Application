@@ -1,0 +1,1 @@
+where we, similarly as above, choose a prior p(ζ) and a function hφ(ζ) such that the following holds:

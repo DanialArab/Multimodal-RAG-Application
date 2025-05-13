@@ -1,0 +1,1 @@
+where {W3,W4,W5,b3,b4,b5} are the weights and biases of the MLP and part of θ when used as decoder. Note that when this network is used as an encoder qφ(z|x), then z and x are swapped, and the weights and biases are variational parameters φ.

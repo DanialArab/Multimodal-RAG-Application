@@ -1,0 +1,1 @@
+See section for general strategies for chosing such an approriate distribution p(e) and function go(€,x). We can now form Monte Carlo estimates of expectations of some function f(z) w.xr.t. q¢(2|x) as follows:

@@ -1,0 +1,1 @@
+Figure 1: The type of directed graphical model under consideration. Solid lines denote the generative model pθ(z)pθ(x|z), dashed lines denote the variational approximation qφ(z|x) to the intractable posterior pθ(z|x). The variational parameters φ are learned jointly with the generative model pa- rameters θ.

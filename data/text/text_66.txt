@@ -1,0 +1,1 @@
+When using a recognition model qφ(z|x) then µ and s.d. σ are simply functions of x and the variational parameters φ, as exempliﬁed in the text.

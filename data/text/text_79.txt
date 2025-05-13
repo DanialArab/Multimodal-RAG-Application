@@ -1,0 +1,3 @@
+E Monte Carlo EM
+The Monte Carlo EM algorithm does not employ an encoder, instead it samples from the pos- terior of the latent variables using gradients of the posterior computed with ∇z logpθ(z|x) = ∇z logpθ(z) + ∇z logpθ(x|z). The Monte Carlo EM procedure consists of 10 HMC leapfrog steps with an automatically tuned stepsize such that the acceptance rate was 90%, followed by 5 weight updates steps using the acquired sample. For all algorithms the parameters were updated using the Adagrad stepsizes (with accompanying annealing schedule).
+The marginal likelihood was estimated with the ﬁrst 1000 datapoints from the train and test sets, for each datapoint sampling 50 values from the posterior of the latent variables using Hybrid Monte Carlo with 4 leapfrog steps.

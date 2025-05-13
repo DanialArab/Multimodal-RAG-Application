@@ -1,0 +1,1 @@
+where the ﬁrst RHS term denotes a KL divergence of the approximate from the true posterior, and where L(φ;X) denotes the variational lower bound to the marginal likelihood:

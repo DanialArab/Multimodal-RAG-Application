@@ -1,0 +1,1 @@
+Given multiple datapoints from a dataset X with N datapoints, we can construct an estimator of the marginal likelihood lower bound of the full dataset, based on minibatches:

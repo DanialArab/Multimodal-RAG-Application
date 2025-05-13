@@ -1,0 +1,1 @@
+For notational conciseness we introduce a shorthand notation fφ(x,z,θ):

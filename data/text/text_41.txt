@@ -1,0 +1,1 @@
+As explained above and in appendix C, the decoding term logpθ(x(i)|z(i,l)) is a Bernoulli or Gaus- sian MLP, depending on the type of data we are modelling.

@@ -1,0 +1,2 @@
+B Solution of −DKL(qφ(z)||pθ(z)), Gaussian case
+The variational lower bound (the objective to be maximized) contains a KL term that can often be integrated analytically. Here we give the solution when both the prior pθ(z) = N(0,I) and the posterior approximation qφ(z|x(i)) are Gaussian. Let J be the dimensionality of z. Let µ and σ denote the variational mean and s.d. evaluated at datapoint i, and let µj and σj simply denote the j-th element of these vectors. Then:

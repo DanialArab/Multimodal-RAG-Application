@@ -1,0 +1,12 @@
+i dzi
+4
+(7)
+that a differentiable estimator can be constructed: f qy(z|x) f(z) dz ~
+that a differentiable estimator can be constructed: f qy(z|x) f(z) dz ~ 1h, F(ga(x,€)) where €!) ~ p(e). In section [2.3] we applied this trick to obtain a differentiable estimator of the variational lower bound.
+Take, for example, the univariate Gaussian case: let z ∼ p(z|x) = N(µ,σ2). In this case, a valid
+Take, for example, the univariate Gaussian case: let z ~ p(z|z) = N(j,07). In this case, a valid reparameterization is z = ju + oe, where € is an auxiliary noise variable « ~ N(0,1). Therefore, En (eiu.02) [f(2)] = Ewteoy [f(t o6)) ~ ty (ue + ce) where € ~ N(0, 1).
+For which qg(z|x) can we choose such a differentiable transformation g¢(.) and auxiliary variable € ~ p(e)? Three basic approaches are:
+1. Tractable inverse CDF. In this case, let € ~ U/(0,1), and let gy(€, x) be the inverse CDF of qo (|x). Examples: Exponential, Cauchy, Logistic, Rayleigh, Pareto, Weibull, Reciprocal, Gompertz, Gumbel and Erlang distributions.
+2. Analogous to the Gaussian example, for any ’location-scale” family of distributions we can choose the standard distribution (with location = 0, scale = 1) as the auxiliary variable e, and let g(.) = location + scale - €. Examples: Laplace, Elliptical, Student’s t, Logistic, Uniform, Triangular and Gaussian distributions.
+3. Composition: It is often possible to express random variables as different transformations of auxiliary variables. Examples: Log-Normal (exponentiation of normally distributed variable), Gamma (a sum over exponentially distributed variables), Dirichlet (weighted sum of Gamma variates), Beta, Chi-Squared, and F distributions.
+When all three approaches fail, good approximations to the inverse CDF exist requiring computa- tions with time complexity comparable to the PDF (see e.g. [Dev86] for some methods).

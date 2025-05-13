@@ -1,0 +1,2 @@
+F.1 Example
+Let the prior over the parameters and latent variables be the centered isotropic Gaussian pα(θ) = N(z;0,I) and pθ(z) = N(z;0,I). Note that in this case, the prior lacks parameters. Let’s also assume that the true posteriors are approximatily Gaussian with an approximately diagonal covari- ance. In this case, we can let the variational approximate posteriors be multivariate Gaussians with a diagonal covariance structure:

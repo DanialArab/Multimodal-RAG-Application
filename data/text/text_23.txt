@@ -1,0 +1,2 @@
+2.2 The variational bound
+The marginal likelihood is composed of a sum over the marginal likelihoods of individual datapoints log po(x™,--- ,x) = ON, log pe(x), which can each be rewritten as:

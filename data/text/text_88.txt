@@ -1,0 +1,1 @@
+where we choose a prior p(€) and a function gg(€, x) such that the following holds:

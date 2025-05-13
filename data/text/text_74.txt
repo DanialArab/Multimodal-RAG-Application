@@ -1,0 +1,1 @@
+1. Sample L values {z(l)} from the posterior using gradient-based MCMC, e.g. Hybrid Monte

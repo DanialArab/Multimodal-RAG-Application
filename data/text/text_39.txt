@@ -1,0 +1,1 @@
+where the mean and s.d. of the approximate posterior, µ(i) and σ(i), are outputs of the encoding MLP, i.e. nonlinear functions of datapoint x(i) and the variational parameters φ (see appendix C).

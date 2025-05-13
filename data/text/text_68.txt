@@ -1,0 +1,2 @@
+C.1 Bernoulli MLP as decoder
+In this case let pθ(x|z) be a multivariate Bernoulli whose probabilities are computed from z with a fully-connected neural network with a single hidden layer:

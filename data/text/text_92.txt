@@ -1,0 +1,1 @@
+Using equations (20) and (18), the Monte Carlo estimate of the variational lower bound, given datapoint x(i), is:

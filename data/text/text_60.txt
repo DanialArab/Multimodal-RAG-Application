@@ -1,0 +1,2 @@
+(a) Learned Frey Face manifold
+(b) Learned MNIST manifold
