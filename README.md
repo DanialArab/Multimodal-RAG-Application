@@ -34,9 +34,9 @@ It integrates various components to extract, embed, index, and retrieve multimod
 Traditional question-answering systems often rely solely on text data, which limits their effectiveness when dealing with complex, information-dense documents like PDFs that contain images, tables, formulas, etc. This project extends the Retrieval-Augmented Generation paradigm by handling multimodal inputs.
 
 The key idea is to :
-- parse different elements (text, images, tables, formulas) from a PDF.
-- convert them into a unified embedding space using CLIP.
-- index those embeddings using FAISS.
+- parse different elements (text, images, tables, formulas) from a PDF,
+- convert them into a unified embedding space using CLIP,
+- index those embeddings using FAISS,
 - retrieve and generate answers to natural language queries using a language model (LLamA) enhanced by relevant context.
 
 <a name="2"></a>
