@@ -18,7 +18,13 @@ It integrates various components to extract, embed, index, and retrieve multimod
    4. [Vector Indexing](#8)
    5. [Retrieval & Answer Generation](#9)
 5. [Results and discussion ](#10)
-   1. [**query_1** = "How is the marginal likelihood is calculated?"](#11)
+   1. [query_1 = "How is the marginal likelihood is calculated?"](#11)
+   2. [query_2 = "What does reparameterization of the variational lower bound yield?](#12)
+   3. [query_3 = "What algorithm was proposed?"](#13)
+   4. [query_4 = query = "What is the trick that was discussed?"](#14)
+   5. [query_5 = "How are Parameters updated?"](#15)
+
+
 
 
 <a name="1"></a>
@@ -106,7 +112,8 @@ Here are the steps to retrieve the answer:
 
 Here are some queries and the RAG response as a POC:
 
-**query_1** = "How is the marginal likelihood is calculated?"
+<a name="11"></a>
+## query_1 = "How is the marginal likelihood is calculated?"
 
 RAG response:
 
@@ -122,36 +129,50 @@ RAG response:
 
 
 
-query = "What does reparameterization of the variational lower bound yield?"
+<a name="12"></a>
+## query_2 = "What does reparameterization of the variational lower bound yield?"
 
 The reparameterization of the variational lower bound yields a Stochastic Gradient Variational Bayes (SGVB) estimator, denoted as ~ L(0, ; x). This allows for the application of stochastic gradient descent to optimize the variational parameters, making it possible to learn the model using backpropagation. The reparameterization trick enables the Monte Carlo estimation of the variational lower bound, which is a key component of Variational Autoencoders (VAEs) and other deep generative models.
 
-In essence, reparameterization helps to:
+RAG response:
 
-Convert a non-differentiable stochastic node into a differentiable one.
-Enable backpropagation through the variational lower bound, allowing for end-to-end learning of the model.
-Improve the stability and efficiency of training by avoiding the need for REINFORCE-style score function estimators.
-By reparameterizing the variational lower bound, you can obtain a more efficient and stable estimate of the evidence lower bound (ELBO), which is essential for training VAEs and other deep generative models.
-
-query = "How are Parameters updated?"
-
-
-query = "What algorithm was proposed?"
-The algorithm is the Auto-Encoding Variational Bayes (AEVB) algorithm, which uses the Stochastic Gradient Variational Bayes (SGVB) estimator to optimize a recognition model for efficient approximate posterior inference.
-
-
-query = "What is the trick that was discussed?"
-The trick that was discussed is called the "reparameterization trick". This trick allows for the differentiation of the variational lower bound with respect to the variational parameters, which is necessary for optimizing the model. The reparameterization trick involves expressing the latent variables as a deterministic function of the variational parameters and a random noise variable, which enables backpropagation through the latent space.
+      In essence, reparameterization helps to:
+      
+      Convert a non-differentiable stochastic node into a differentiable one.
+      Enable backpropagation through the variational lower bound, allowing for end-to-end learning of the model.
+      Improve the stability and efficiency of training by avoiding the need for REINFORCE-style score function estimators.
+      By reparameterizing the variational lower bound, you can obtain a more efficient and stable estimate of the evidence lower bound (ELBO), which is essential for training VAEs and other deep generative models.
 
 
 
-query = "How are Parameters updated?"
-In the VAE paper, parameters are updated using stochastic gradient methods, specifically the Adagrad algorithm with a global stepsize parameter chosen from {0.01, 0.02, 0.1} based on performance on the training set in the first few iterations. The parameters, both variational and generative, are initialized by random sampling from N(0,0.01) and are jointly stochastically optimized using the MAP criterion. Minibatches of size M = 100 are used, with L = 1 samples per datapoint.
+<a name="13"></a>
+## query_3 = "What algorithm was proposed?"
 
-To be more specific, the parameter updates are done as follows:
+RAG response:
 
-The variational lower bound is reparameterized to obtain a lower bound estimator that can be straightforwardly optimized using standard stochastic gradient methods.
-The Adagrad algorithm is used to adapt the stepsizes for the parameter updates.
-The global stepsize parameters are chosen from {0.01, 0.02, 0.1} based on performance on the training set in the first few iterations.
-Minibatches of size M = 100 are used, with L = 1 samples per datapoint.
-This process allows for efficient inference and learning in directed probabilistic models with continuous latent variables and large datasets.
+      The algorithm is the Auto-Encoding Variational Bayes (AEVB) algorithm, which uses the Stochastic Gradient Variational Bayes (SGVB) estimator to optimize a recognition model for efficient approximate posterior inference.
+
+
+<a name="14"></a>
+## query_4 = "What is the trick that was discussed?"
+
+RAG response:
+
+      The trick that was discussed is called the "reparameterization trick". This trick allows for the differentiation of the variational lower bound with respect to the variational parameters, which is necessary for optimizing the model. The reparameterization trick involves expressing the latent variables as a deterministic function of the variational parameters and a random noise variable, which enables backpropagation through the latent space.
+
+
+
+<a name="15"></a>
+## query_5 = "How are Parameters updated?"
+
+RAG response:
+
+      In the VAE paper, parameters are updated using stochastic gradient methods, specifically the Adagrad algorithm with a global stepsize parameter chosen from {0.01, 0.02, 0.1} based on performance on the training set in the first few iterations. The parameters, both variational and generative, are initialized by random sampling from N(0,0.01) and are jointly stochastically optimized using the MAP criterion. Minibatches of size M = 100 are used, with L = 1 samples per datapoint.
+
+      To be more specific, the parameter updates are done as follows:
+
+      The variational lower bound is reparameterized to obtain a lower bound estimator that can be straightforwardly optimized using standard stochastic gradient methods.
+      The Adagrad algorithm is used to adapt the stepsizes for the parameter updates.
+      The global stepsize parameters are chosen from {0.01, 0.02, 0.1} based on performance on the training set in the first few iterations.
+      Minibatches of size M = 100 are used, with L = 1 samples per datapoint.
+      This process allows for efficient inference and learning in directed probabilistic models with continuous latent variables and large datasets.
