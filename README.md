@@ -29,11 +29,10 @@ The key idea is to :
 ## Tech stack
  Here are the tech stack used to build this project:
 
-- **<a href="https://unstructured.io/">Unstructured</a>** is used for all kind of data extraction and parsing
-- Contrastive Language-Image Pretraining (CLIP) model is used to generate embeddings. It jointly embeds images and text into the same vector space, enabling comparison between the two.
-- LangChain
-- Embedding / Vector Search FastEmbed, Faiss, Sentence Transformers (via Hugging Face) – Embedding generation & similarity search
- 
+- Data handling: **<a href="https://unstructured.io/">Unstructured</a>** is used for all kind of data extraction and parsing
+- Embedding: The Contrastive Language-Image Pretraining (CLIP) model is used to generate embeddings. It jointly embeds images and text into the same vector space, enabling comparison between the two.
+- Vector Search: FAISS is used for similarity search and building a searchable index of embeddings to perform fast and scalable similarity queries.
+
 
 <a name="2"></a>
 ## The repository is organized as follows:
