@@ -4,7 +4,7 @@ In this project, I implemented a Multimodal Retrieval-Augmented Generation (RAG)
 - text,
 - images,
 - tables, and
-- formulas.
+- formulas. 
 
 It integrates various components to extract, embed, index, and retrieve multimodal data, facilitating advanced question-answering capabilities.
 
