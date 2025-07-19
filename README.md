@@ -1,6 +1,6 @@
 # Multimodal Retrieval-Augmented Generation
 
-In this project, I implemented a Multimodal Retrieval-Augmented Generation (RAG) system capable of processing and querying information from PDF documents containing  
+In this project, I implemented a Multimodal Retrieval-Augmented Generation (RAG) system capable of processing and querying information from PDF documents containing 
 - text,
 - images,
 - tables, and
